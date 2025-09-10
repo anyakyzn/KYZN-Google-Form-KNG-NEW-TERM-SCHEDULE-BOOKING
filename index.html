@@ -11,7 +11,7 @@
       background-color: #f8f9fa;
     }
     .form-container {
-      max-width: 720px; /* biar mirip form google */
+      max-width: 720px; /* mirip Google Form */
       margin: auto;
       padding: 30px;
       background: #fff;
@@ -24,10 +24,16 @@
       max-width: 100%;
       border-radius: 8px;
     }
+    .description-box {
+      background-color: #f1f3f4;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
-  <div class="container py-5">
+  <div class="container py-5 px-3"> <!-- padding kanan kiri ditambah -->
     <div class="form-container">
       <!-- Header Image -->
       <img src="https://drive.google.com/uc?export=view&id=1afL1mZF5C9FWElH8uJFNTA3kIacqcFu1" alt="Header" class="header-image">
@@ -35,6 +41,25 @@
       <!-- Title -->
       <h2 class="mb-4 text-center">KYZN KUNINGAN NEW TERM SCHEDULE BOOKING</h2>
 
+      <!-- Description -->
+      <div class="description-box">
+        <h5>What is Term Class?</h5>
+        <p class="mb-0">
+          A structured 10-week program within a 3-month term, offering clear lesson plans, 
+          objectives, and a student progress report at the term's end. Available for various 
+          activities such as Badminton, Ballet, Basketball, and more, it focuses on skill 
+          progression and development.
+        </p>
+        <ul class="mt-2">
+          <li>Goal-Oriented and Structured: Ideal for members who prefer a structured approach.</li>
+          <li>Skill Development Focused: Enhance skills systematically over a period.</li>
+          <li>Commitment-Ready: Fixed schedule for 10 weeks.</li>
+          <li>Progress Tracking: Members receive feedback and reports for improvement.</li>
+        </ul>
+        <p class="fw-bold">Registration Period : 18-31 March 2024</p>
+      </div>
+
+      <!-- Form -->
       <form id="myForm" class="needs-validation" novalidate>
         <!-- Data Peserta -->
         <div class="mb-3">
