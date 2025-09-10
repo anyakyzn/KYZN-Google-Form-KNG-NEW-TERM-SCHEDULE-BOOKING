@@ -206,16 +206,11 @@
     let formData = new FormData(document.getElementById("myForm"));
 
     fetch(scriptURL, { method: "POST", body: formData })
-      .then(res => res.json())
-      .then(data => {
-        if(data.status === "success"){
-          Swal.fire("Success", data.message, "success");
-          document.getElementById("myForm").reset();
-        } else {
-          Swal.fire("Error", data.message, "error");
-        }
-      })
-      .catch(err => Swal.fire("Error", err.message, "error"));
+.then(res => res.text())
+.then(msg => {
+  Swal.fire("Success", msg, "success");
+  document.getElementById("myForm").reset();
+}).catch(err => Swal.fire("Error", err.message, "error"));
   });
 </script>
 
