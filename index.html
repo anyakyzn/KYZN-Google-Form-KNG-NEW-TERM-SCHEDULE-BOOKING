@@ -60,140 +60,141 @@
       </div>
 
       <!-- Form -->
-      <form id="myForm" class="needs-validation" novalidate>
-        <!-- Data Peserta -->
-        <div class="mb-3">
-          <label class="form-label">Nama</label>
-          <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Parent Name</label>
-          <input type="text" class="form-control" id="parentName" required>
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Phone Number</label>
-          <input type="text" class="form-control" id="phoneNumber" required>
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Kids Name</label>
-          <input type="text" class="form-control" id="kidsName" required>
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Date of Birth</label>
-          <input type="date" class="form-control" id="dob" required>
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Do you want to change your term schedule?</label>
-          <select class="form-select" id="changeTerm" required>
-            <option value="">-- Pilih --</option>
-            <option value="change">Yes, I want to change my schedule</option>
-            <option value="same">No, I want the same schedule</option>
-            <option value="new">I'm a new member</option>
-          </select>
-        </div>
+<form id="myForm" class="needs-validation" novalidate>
+  <!-- Data Peserta -->
+  <div class="mb-3">
+    <label class="form-label">Nama</label>
+    <input type="text" class="form-control" id="name" name="name" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Parent Name</label>
+    <input type="text" class="form-control" id="parentName" name="parentName" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Phone Number</label>
+    <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Kids Name</label>
+    <input type="text" class="form-control" id="kidsName" name="kidsName" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Date of Birth</label>
+    <input type="date" class="form-control" id="dob" name="dob" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Do you want to change your term schedule?</label>
+    <select class="form-select" id="changeTerm" name="changeTerm" required>
+      <option value="">-- Pilih --</option>
+      <option value="change">Yes, I want to change my schedule</option>
+      <option value="same">No, I want the same schedule</option>
+      <option value="new">I'm a new member</option>
+    </select>
+  </div>
 
-        <!-- Token 1–5 -->
-        <div class="mb-3">
-          <label class="form-label">Token 1</label>
-          <select class="form-select" id="token1" required>
-            <option value="">-- Pilih Token 1 --</option>
-            <option>Monday TinyStar Gymnastics, 10:00</option>
-            <option>Monday BabyStar Gymnastics, 11:00</option>
-            <option>Monday TinyStar Gymnastics, 13:00</option>
-            <option>Monday Baby/Tiny Phonics, 14:00</option>
-            <option>Tuesday Tiny Phonics, 10:00</option>
-            <option>Tuesday TinyStar Gymnastics, 10:00</option>
-            <option>Tuesday Baby/Tiny Swimming, 11:00</option>
-            <option>Tuesday TinyStar Ballet, 11:00</option>
-            <option>Tuesday Baby/Tiny Phonics, 15:00</option>
-            <option>Wednesday BabyStar Phonics, 10:00</option>
-          </select>
-        </div>
+  <!-- Token 1–5 -->
+  <div class="mb-3">
+    <label class="form-label">Token 1</label>
+    <select class="form-select" id="token1" name="token1" required>
+      <option value="">-- Pilih Token 1 --</option>
+      <option>Monday TinyStar Gymnastics, 10:00</option>
+      <option>Monday BabyStar Gymnastics, 11:00</option>
+      <option>Monday TinyStar Gymnastics, 13:00</option>
+      <option>Monday Baby/Tiny Phonics, 14:00</option>
+      <option>Tuesday Tiny Phonics, 10:00</option>
+      <option>Tuesday TinyStar Gymnastics, 10:00</option>
+      <option>Tuesday Baby/Tiny Swimming, 11:00</option>
+      <option>Tuesday TinyStar Ballet, 11:00</option>
+      <option>Tuesday Baby/Tiny Phonics, 15:00</option>
+      <option>Wednesday BabyStar Phonics, 10:00</option>
+    </select>
+  </div>
 
-        <div class="mb-3">
-          <label class="form-label">Token 2</label>
-          <select class="form-select" id="token2" required>
-            <option value="">-- Pilih Token 2 --</option>
-            <option>Monday TinyStar Gymnastics, 10:00</option>
-            <option>Monday BabyStar Gymnastics, 11:00</option>
-            <option>Monday TinyStar Gymnastics, 13:00</option>
-            <option>Monday Baby/Tiny Phonics, 14:00</option>
-            <option>Tuesday Tiny Phonics, 10:00</option>
-            <option>Tuesday TinyStar Gymnastics, 10:00</option>
-            <option>Tuesday Baby/Tiny Swimming, 11:00</option>
-            <option>Tuesday TinyStar Ballet, 11:00</option>
-            <option>Tuesday Baby/Tiny Phonics, 15:00</option>
-            <option>Wednesday BabyStar Phonics, 10:00</option>
-          </select>
-        </div>
+  <div class="mb-3">
+    <label class="form-label">Token 2</label>
+    <select class="form-select" id="token2" name="token2" required>
+      <option value="">-- Pilih Token 2 --</option>
+      <option>Monday TinyStar Gymnastics, 10:00</option>
+      <option>Monday BabyStar Gymnastics, 11:00</option>
+      <option>Monday TinyStar Gymnastics, 13:00</option>
+      <option>Monday Baby/Tiny Phonics, 14:00</option>
+      <option>Tuesday Tiny Phonics, 10:00</option>
+      <option>Tuesday TinyStar Gymnastics, 10:00</option>
+      <option>Tuesday Baby/Tiny Swimming, 11:00</option>
+      <option>Tuesday TinyStar Ballet, 11:00</option>
+      <option>Tuesday Baby/Tiny Phonics, 15:00</option>
+      <option>Wednesday BabyStar Phonics, 10:00</option>
+    </select>
+  </div>
 
-        <div class="mb-3">
-          <label class="form-label">Token 3</label>
-          <select class="form-select" id="token3" required>
-            <option value="">-- Pilih Token 3 --</option>
-            <option>Tuesday Baby/TinyStar Art Hub, 11:00</option>
-            <option>Tuesday Groovy Baby Dance, 13:00</option>
-            <option>Wednesday Baby/TinyStar First Step, 10:00</option>
-            <option>Wednesday Baby/TinyStar Art Hub, 10:00</option>
-            <option>Wednesday Baby/TinyStar Art Hub, 11:00</option>
-            <option>Wednesday Boogie/Groovy Baby Dance, 12:00</option>
-            <option>Wednesday Baby/TinyStar First Step, 14:00</option>
-            <option>Thursday Baby/TinyStar First Step, 09:00</option>
-            <option>Thursday Baby/TinyStar First Step, 11:00</option>
-            <option>Thursday Baby/TinyStar Art Hub, 13:00</option>
-            <option>Friday Boogie/Groovy Baby Dance, 10:00</option>
-            <option>Friday Baby/TinyStar Art Hub, 11:00</option>
-            <option>Sunday Baby/TinyStar First Step, 14:00</option>
-          </select>
-        </div>
+  <div class="mb-3">
+    <label class="form-label">Token 3</label>
+    <select class="form-select" id="token3" name="token3" required>
+      <option value="">-- Pilih Token 3 --</option>
+      <option>Tuesday Baby/TinyStar Art Hub, 11:00</option>
+      <option>Tuesday Groovy Baby Dance, 13:00</option>
+      <option>Wednesday Baby/TinyStar First Step, 10:00</option>
+      <option>Wednesday Baby/TinyStar Art Hub, 10:00</option>
+      <option>Wednesday Baby/TinyStar Art Hub, 11:00</option>
+      <option>Wednesday Boogie/Groovy Baby Dance, 12:00</option>
+      <option>Wednesday Baby/TinyStar First Step, 14:00</option>
+      <option>Thursday Baby/TinyStar First Step, 09:00</option>
+      <option>Thursday Baby/TinyStar First Step, 11:00</option>
+      <option>Thursday Baby/TinyStar Art Hub, 13:00</option>
+      <option>Friday Boogie/Groovy Baby Dance, 10:00</option>
+      <option>Friday Baby/TinyStar Art Hub, 11:00</option>
+      <option>Sunday Baby/TinyStar First Step, 14:00</option>
+    </select>
+  </div>
 
-        <div class="mb-3">
-          <label class="form-label">Token 4</label>
-          <select class="form-select" id="token4" required>
-            <option value="">-- Pilih Token 4 --</option>
-            <option>Tuesday Baby/TinyStar Art Hub, 11:00</option>
-            <option>Tuesday Groovy Baby Dance, 13:00</option>
-            <option>Wednesday Baby/TinyStar First Step, 10:00</option>
-            <option>Wednesday Baby/TinyStar Art Hub, 10:00</option>
-            <option>Wednesday Baby/TinyStar Art Hub, 11:00</option>
-            <option>Wednesday Boogie/Groovy Baby Dance, 12:00</option>
-            <option>Wednesday Baby/TinyStar First Step, 14:00</option>
-            <option>Thursday Baby/TinyStar First Step, 09:00</option>
-            <option>Thursday Baby/TinyStar First Step, 11:00</option>
-            <option>Thursday Baby/TinyStar Art Hub, 13:00</option>
-            <option>Friday Boogie/Groovy Baby Dance, 10:00</option>
-            <option>Friday Baby/TinyStar Art Hub, 11:00</option>
-            <option>Sunday Baby/TinyStar First Step, 14:00</option>
-          </select>
-        </div>
+  <div class="mb-3">
+    <label class="form-label">Token 4</label>
+    <select class="form-select" id="token4" name="token4" required>
+      <option value="">-- Pilih Token 4 --</option>
+      <option>Tuesday Baby/TinyStar Art Hub, 11:00</option>
+      <option>Tuesday Groovy Baby Dance, 13:00</option>
+      <option>Wednesday Baby/TinyStar First Step, 10:00</option>
+      <option>Wednesday Baby/TinyStar Art Hub, 10:00</option>
+      <option>Wednesday Baby/TinyStar Art Hub, 11:00</option>
+      <option>Wednesday Boogie/Groovy Baby Dance, 12:00</option>
+      <option>Wednesday Baby/TinyStar First Step, 14:00</option>
+      <option>Thursday Baby/TinyStar First Step, 09:00</option>
+      <option>Thursday Baby/TinyStar First Step, 11:00</option>
+      <option>Thursday Baby/TinyStar Art Hub, 13:00</option>
+      <option>Friday Boogie/Groovy Baby Dance, 10:00</option>
+      <option>Friday Baby/TinyStar Art Hub, 11:00</option>
+      <option>Sunday Baby/TinyStar First Step, 14:00</option>
+    </select>
+  </div>
 
-        <div class="mb-3">
-          <label class="form-label">Token 5</label>
-          <select class="form-select" id="token5" required>
-            <option value="">-- Pilih Token 5 --</option>
-            <option>Tuesday Baby/TinyStar Art Hub, 11:00</option>
-            <option>Tuesday Groovy Baby Dance, 13:00</option>
-            <option>Wednesday Baby/TinyStar First Step, 10:00</option>
-            <option>Wednesday Baby/TinyStar Art Hub, 10:00</option>
-            <option>Wednesday Baby/TinyStar Art Hub, 11:00</option>
-            <option>Wednesday Boogie/Groovy Baby Dance, 12:00</option>
-            <option>Wednesday Baby/TinyStar First Step, 14:00</option>
-            <option>Thursday Baby/TinyStar First Step, 09:00</option>
-            <option>Thursday Baby/TinyStar First Step, 11:00</option>
-            <option>Thursday Baby/TinyStar Art Hub, 13:00</option>
-            <option>Friday Boogie/Groovy Baby Dance, 10:00</option>
-            <option>Friday Baby/TinyStar Art Hub, 11:00</option>
-            <option>Sunday Baby/TinyStar First Step, 14:00</option>
-          </select>
-        </div>
+  <div class="mb-3">
+    <label class="form-label">Token 5</label>
+    <select class="form-select" id="token5" name="token5" required>
+      <option value="">-- Pilih Token 5 --</option>
+      <option>Tuesday Baby/TinyStar Art Hub, 11:00</option>
+      <option>Tuesday Groovy Baby Dance, 13:00</option>
+      <option>Wednesday Baby/TinyStar First Step, 10:00</option>
+      <option>Wednesday Baby/TinyStar Art Hub, 10:00</option>
+      <option>Wednesday Baby/TinyStar Art Hub, 11:00</option>
+      <option>Wednesday Boogie/Groovy Baby Dance, 12:00</option>
+      <option>Wednesday Baby/TinyStar First Step, 14:00</option>
+      <option>Thursday Baby/TinyStar First Step, 09:00</option>
+      <option>Thursday Baby/TinyStar First Step, 11:00</option>
+      <option>Thursday Baby/TinyStar Art Hub, 13:00</option>
+      <option>Friday Boogie/Groovy Baby Dance, 10:00</option>
+      <option>Friday Baby/TinyStar Art Hub, 11:00</option>
+      <option>Sunday Baby/TinyStar First Step, 14:00</option>
+    </select>
+  </div>
 
-        <!-- Submit -->
-        <button type="submit" class="btn btn-primary w-100">Submit</button>
-      </form>
+  <!-- Submit -->
+  <button type="submit" class="btn btn-primary w-100">Submit</button>
+</form>
+
     </div>
   </div>
 
